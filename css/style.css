@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap&subset=japanese');
+
+body {
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    height: 400px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 40px;
+}
+
+.loading h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.loading h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.loading .btn {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #000;
+    border-radius: 2px;
+    margin: 10px 0;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 120px;
+    white-space: nowrap;
+}
+
+.loading .btn:hover {
+    background-color: #888;
+}
+
+.main {
+    position: absolute;
+    top: 400px;
+    background-color: black;
+    grid-gap: 10px;
+}
+
+.image {
+    background-color: black;
+    padding: 20px;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+}
+
+.image img {
+    width: 100%;
+}
+
+.image .caption {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image .caption h3 {
+    color: white;
+    font-weight: bold;
+}
+
+.image .caption p {
+    color: white;
+}
+
+.image .buttons {
+    margin: 10px auto;
+}
+
+.image .btn {
+    color: white;
+    font-weight: bold;
+    background-color: #333;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    margin: 10px 0;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    width: 100px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.image .btn:hover {
+    background-color: #888;
+}
+
+@media screen and (min-width: 375px) {
+    .loading h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+    }
+    
+    .loading h2 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    
+}
+
+@media screen and (min-width: 648px) {
+    .loading h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+    
+    .loading h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    
+}
+
+@media screen and (min-width: 1000px) {
+    .loading h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+    
+    .loading h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+    }
+
+    .loading {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400px;
+    }
+
+    .main {
+        position: absolute;
+        top: 0;
+        left: 400px;
+    }
+
+    #view-works {
+        display: none;
+    }
+}
